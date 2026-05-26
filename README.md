@@ -23,7 +23,7 @@ Below is the roadmap of the codebase. Each script is self-contained and handles 
 
 | File Name | Description | Primary Output Artifact |
 | :--- | :--- | :--- |
-| `clinical_ml_pipeline.py` | Core engine executing cross-validated GridSearch on 9+ base models and stacking meta-learners. Includes SHAP analysis on the optimal model. | `all_model_metrics.csv`, `top_performers_AUC.png`, `shap_analysis.png` |
+| `clinical_ml_pipeline.py` | Core engine executing cross-validated GridSearch on 9+ base models and stacking meta-learners. | `all_model_metrics.csv`, `top_performers_AUC.png` |
 | `treatment_burden_analysis.py` | Calculates cumulative risk score based on treatment intensity (ALND, Chemo, RT). | `treatment_burden_detailed_risks.png` |
 | `surgery_rt_synergy_plot.py` | Evaluates the compound risk interaction specifically between axillary surgery and radiotherapy. | `2_surgery_rt_synergy.png` |
 | `molecular_subtype_risk_analysis.py` | Classifies patients using the St. Gallen Criteria and analyzes lymphedema prevalence across biological phenotypes. | `1_molecular_subtype_risk.png` |
